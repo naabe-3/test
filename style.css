@@ -1,0 +1,86 @@
+/* 基本のスタイル */
+body {
+    background-color: #e9edc9;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #aec3b0;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+nav {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    flex-grow: 1;
+    text-align: center;
+}
+nav a:hover {
+    background-color: #575757;
+}
+section {
+    padding: 20px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.project {
+    margin-bottom: 20px;
+}
+.project h3 {
+    margin-top: 0;
+}
+
+/* メディアクエリー: 768px以下（タブレットやスマホ向け） */
+@media (max-width: 768px) {
+    header {
+        font-size: 1.2em;
+        padding: 15px;
+    }
+    nav a {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+    section {
+        padding: 15px;
+    }
+    footer {
+        font-size: 0.9em;
+    }
+}
+
+/* メディアクエリー: 480px以下（スマートフォン向け） */
+@media (max-width: 480px) {
+    header {
+        font-size: 1em;
+        padding: 10px;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        text-align: left;
+        padding: 10px;
+        border-bottom: 1px solid #575757;
+    }
+    footer {
+        font-size: 0.8em;
+    }
+}
